@@ -1,0 +1,82 @@
+-----------------------------------------------------------------
+README - Domain Labeling
+
+Sapienza NLP Group
+Sapienza University of Rome
+http://nlp.uniroma1.it
+-----------------------------------------------------------------
+
+This package contains a software whose function is to 
+automatically tag dictionary glosses with domains of knowledge 
+labels. 
+
+The software exploits the representational power of 
+multilingual BERT (M-BERT) and makes use of a simple yet 
+efficient Sequence Classification architecture, composed of a 
+multilingual BERT encoder -- which encodes the input -- and a 
+linear layer, to perform the classification.
+
+--------
+CONTENTS
+--------
+
+This package contains the following components:
+
+├── config
+│   └── custom.jsonnet   # base jsonnet configuration file
+├── data                 # folder for data
+├── models
+│   ├── released         # folder for released models
+│   └── trained          # folder for trained models
+├── src                  # source code
+│   ├── allen_elements   # allennlp-related code
+│   ├── serve.py         # simple cli interactive demo
+│   └── main.py          # training entry point
+├── requirements.txt
+├── README
+└── USAGE.md
+
+------------
+REQUIREMENTS
+------------
+
+A python 3.7 installation (possibly in an environment manager).
+
+------------
+INSTALLATION
+------------
+
+Before running the following command, it is advised to create a new environment
+(e.g., with conda) to avoid conflicts with your current one.
+
+Install requirements via pip install -r requirements.txt.
+
+The code is based off of AllenNLP's library. See usage instructions at USAGE.md.
+
+-------
+AUTHORS
+-------
+
+Federico Martelli, Sapienza University of Rome
+(martelli@di.uniroma1.it)
+
+Roberto Navigli, Sapienza University of Rome
+(navigli@di.uniroma1.it)
+
+Acknowledgments go to Niccolò Campolungo, Babelscape
+(campolungo@babelscape.com), for his contribution to the project.
+
+---------
+COPYRIGHT
+---------
+
+This software is licensed under a Creative Commons Attribution-Noncommercial-
+Share Alike 4.0 License. See the LICENSE file for details.
+
+---------------
+ACKNOWLEDGMENTS
+---------------
+
+This software is an output of the ELEXIS project (https://elex.is). This project has
+received funding from the European Union's Horizon 2020 research and innovation
+programme under grant agreement No. 731015.
