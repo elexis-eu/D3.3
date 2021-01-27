@@ -36,7 +36,7 @@ Once the model has finished training, all the training files will be saved under
 
 # Using a released / trained model
 
-Download the WordNet-based model at http://TODO (link will be available soon) and place it under the `models/released/` folder.
+Download the WordNet-based model at https://drive.google.com/drive/folders/1v_sIGDcdx-KT6szYEo2DAeNq9NqM0ABs?usp=sharing and place it under the `models/released/` folder.
 
 To run a simple interactive command-line demo, run the following command:
 ```
