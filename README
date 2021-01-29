@@ -25,6 +25,7 @@ This package contains the following components:
 ├── config
 │   └── custom.jsonnet   # base jsonnet configuration file
 ├── data                 # folder for data
+├── LICENSE
 ├── models
 │   ├── released         # folder for released models
 │   └── trained          # folder for trained models
